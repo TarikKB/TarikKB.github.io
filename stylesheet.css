@@ -1,27 +1,30 @@
 @font-face { font-family: Barlow; src: url('Barlow-Regular.otf'); }
+@font-face { font-family: Ubuntu; src: url('Ubuntu-Light.ttf'); }
 
 
 
 h1 {
 
-  font-family: Barlow;
+  font-family: Ubuntu;
   display: block;
   font-size: 2em;
   margin-top: 1em;
   margin-bottom: 0.67em;
   margin-left: 0;
   margin-right: 0;
-  font-weight: bold;
-  color: black;
+  color: FFFFEE;
   text-align: center;
+  
   
 }
 
+
 h2 {
 	font-size:1.6em;
-	font-family: Barlow;
+	font-family: Ubuntu;
   display: block;
   text-align: center;
+  color: FFFFEE;
 	
 }
 
@@ -31,7 +34,7 @@ body {
 	font-family: Barlow;
 	/* background-image: linear-gradient(beige, linen 30%); */
 	/* background: linen; */
-	background: #DAEDF6;
+	background: #2E2E2E;
 	height: 100%;
 	
 	
@@ -46,7 +49,8 @@ p {
   height: 50%; /* == 160px * .25 = 40px */
   margin: 5%; /* == 400px * .05 = 20px */
   padding: 3%; /* == 400px * .05 = 20px */
-  background: #52A7CC;
+  background: #212121;
+  color: #FFFFEE;
   
 }
 
@@ -86,12 +90,12 @@ overflow-y: scroll;
 }
 
 .fade-in-image { 
-   animation: fadeIn 1.5s; 
+   animation: fadeIn 3s; 
    display: flex;
-  -webkit-animation: fadeIn 1.5s;
-  -moz-animation: fadeIn 1.5s;
-  -o-animation: fadeIn 1.5s;
-  -ms-animation: fadeIn 1.5s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
 
   }
 
