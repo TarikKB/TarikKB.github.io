@@ -12,7 +12,7 @@ h1 {
   margin-bottom: 0.67em;
   margin-left: 0;
   margin-right: 0;
-  color: FFFFEE;
+  color: #FFFFEE;
   text-align: center;
   
   
@@ -24,9 +24,44 @@ h2 {
 	font-family: Ubuntu;
   display: block;
   text-align: center;
-  color: FFFFEE;
+  color: #FFFFEE;
 	
 }
+
+h3 {
+	
+	font-size: 4em;
+	text-align: center;
+	font-family: Ubuntu;
+	color: #FFFFEE;
+	
+}
+
+.button {
+  font-size: 1.5em;
+  border: none;
+  color: #FFFFEE;
+  /* padding: 15px 32px; */
+  text-align: center;
+  
+  text-decoration: none;
+  /* display: inline-block; */
+  font-family: Ubuntu;
+  background: #2E2E2E;
+  
+  
+  cursor: pointer;
+}
+
+.aboutbutton {
+	right: 5%;
+	top: 6%;
+	font-size: 0.8em;
+	position: absolute;
+	color: #FFFFEE;
+}
+
+
 
 .collapsible {
   background-color: #2E2E2E;
@@ -73,7 +108,7 @@ a:link {
 
 /* visited link */
 a:visited {
-  color: green;
+  color: 767676;
 }
 
 /* mouse over link */
@@ -86,7 +121,7 @@ a:active {
   color: blue;
 }
 
-p {
+.p {
 	
   font-size: 2em;
   float: center;
@@ -99,20 +134,20 @@ p {
   
 }
 
-p.2 {
+
+.p2 {
 	
-
-
-  text-align: right;	
-  font-size: 10em;
+  font-size: 1.5em;
   float: center;
   /* width: 50%; /* == 400px * .5 = 200px */ */
   height: 50%; /* == 160px * .25 = 40px */
   margin: 5%; /* == 400px * .05 = 20px */
   padding: 3%; /* == 400px * .05 = 20px */
-  background: #52A7CC;
+  background: #212121;
+  color: #FFFFEE;
   
 }
+
 
 
 .column {

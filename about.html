@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC>
+<html>
+
+<meta http-equiv='cache-control' content='no-cache'> 
+<meta http-equiv='expires' content='0'> 
+<meta http-equiv='pragma' content='no-cache'>
+
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<head>
+<title>About — Tarik B</title>
+<link rel="icon" href="guy_3.png">
+<h1>
+<form>
+<button class="button" type="submit" formaction="index.html">
+TARIK BAGHDADI
+</button>
+</form>
+</h1>
+<h3>
+<div class="fade-in-text">
+About
+
+</h3>
+</head>
+
+<body>
+<p class="p2 fade-in-text">
+Born and raised in San Francisco. Palestinian-American programmer attending Rensselaer Polytechnic University.
+I have a passion for making and playing video games. Some of my favorites include but are not limited to: 
+</p>
+</div>
+<div class="fade-in-image">
+<img src="tarik2.jpg" alt="tarik" width="20%" style="margin-left: 40%;">
+</div>
+
+
+</body>
+<br>
+
+
+
+<footer>
+	<br>
+  Contact me at:
+  <a href="mailto:tarikkbaghdadi@gmail.com">tarikkbaghdadi@gmail.com</a>
+  
+  <br><br>
+</footer>
+
+
+</body>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</html>
