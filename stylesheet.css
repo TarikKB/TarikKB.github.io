@@ -68,7 +68,7 @@ body {
 }
 
 a:link {
-  color: white;
+  color: 767676;
 }
 
 /* visited link */
@@ -123,9 +123,12 @@ p.2 {
 }
 
 footer {
-	/* background: white; */
+	padding: 2px;
+	margin: 2px;
+	background: #212121;
 	font-size: 1em;
 	text-align: center;
+	color: white;
 	
 }
 
