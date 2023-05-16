@@ -37,10 +37,21 @@ I like to make games :)
 </h2>
 </div>
 <body>
+<!-- <br><br><br><br><br> -->
+<!-- <button type="button" class="collapsible"><img src="Pixel_Plague_Title_2.png" alt="pixelplaguetitle" width="50%" style="margin: 0px"></button> -->
+<!-- <div class="content"> -->
+ <!-- <p> -->
+ <!-- Pixel plague is a wave based horde shoot em up created for my Intro to Game Programming course at RPI.  -->
+<!-- Using a minigun, the player guns down hordes of zombies, racking up points. This is achieved through a wave manager script that  -->
+<!-- controls the frequency and quantity of enemies. Powerups drop between waves to keep increasing the strength of the player. Unity's particle -->
+<!-- system generator played a large role in the effects of the minigun fire. This coupled with screen shake and some minor lighting -->
+<!-- tweaks made the final product. -->
+<!-- </p> -->
+<!-- </div> -->
 <p>
 
 <b>PIXEL PLAGUE</b> 
-<img src="Pixel_Plague_Title_2.png" alt="pixelplaguetitle" width="50%" style="float: right; margin-left: 10px; margin-top: 6px">
+<img src="Pixel_Plague_Title_2.png" alt="pixelplaguetitle" width="50%" style="float: right; margin-left: 22px; margin-top: 6px">
 
 <br><br>
 Pixel plague is a wave based horde shoot em up created for my Intro to Game Programming course at RPI. 
@@ -74,4 +85,24 @@ At the top of the level resides a goal to be reached after some increasingly dif
 
 </body>
 
+
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
 </html>
