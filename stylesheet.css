@@ -1,10 +1,22 @@
-@font-face { font-family: Barlow; src: url('Barlow-Regular.otf'); }
-@font-face { font-family: Ubuntu; src: url('Ubuntu-Light.ttf'); }
+@font-face { 
+  font-family: Barlow; 
+  src: url('Barlow-Regular.otf'); 
+}
+@font-face { 
+  font-family: Ubuntu; 
+  src: url('Ubuntu-Light.ttf'); 
+}
 
-
+body {
+  background: #2E2E2E;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+}
 
 h1 {
-
   font-family: Ubuntu;
   display: block;
   font-size: 2em;
@@ -14,58 +26,42 @@ h1 {
   margin-right: 0;
   color: #FFFFEE;
   text-align: center;
-  
-  
 }
 
-
 h2 {
-	font-size:1.6em;
-	font-family: Ubuntu;
-  /* display: block; */
+  font-size: 1.6em;
+  font-family: Ubuntu;
   text-align: center;
   color: #FFFFEE;
-	
 }
 
 h3 {
-	
-	font-size: 3em;
-	text-align: center;
-	font-family: Ubuntu;
-	color: #FFFFEE;
-	
+  font-size: 3em;
+  text-align: center;
+  font-family: Ubuntu;
+  color: #FFFFEE;
 }
 
 .button {
   font-size: 1.5em;
   border: none;
   color: #FFFFEE;
-  /* padding: 15px 32px; */
   text-align: center;
-  
-  text-decoration: none;
-  /* display: inline-block; */
   font-family: Ubuntu;
   background: #2E2E2E;
-  
-  
   cursor: pointer;
 }
 
 .aboutbutton {
-	right: 5%;
-	top: 6%;
-	font-size: 0.8em;
-	position: absolute;
-	color: #FFFFEE;
+  right: 5%;
+  top: 6%;
+  font-size: 0.8em;
+  position: absolute;
+  color: #FFFFEE;
 }
-
-
 
 .collapsible {
   background-color: #2E2E2E;
-  /* color: #444; */
   cursor: pointer;
   padding: 0px;
   width: 100%;
@@ -74,48 +70,30 @@ h3 {
   outline: none;
   font-size: 15px;
 }
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/*
 .active, .collapsible:hover {
-  /* background-color: #ccc; */
+   background-color: #ccc; 
 }
-
+*/
 .content {
- 
-  
   text-align: left;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease-out;
 }
 
-/* Style the collapsible content. Note: hidden by default */
-
-
-body {
-	/* background-image: linear-gradient(beige, linen 30%); */
-	/* background: linen; */
-	background: #2E2E2E;
-	height: 100%;
-	
-	
-}
-
 a:link {
   color: 767676;
 }
 
-/* visited link */
 a:visited {
   color: 767676;
 }
 
-/* mouse over link */
 a:hover {
   color: hotpink;
 }
 
-/* selected link */
 a:active {
   color: blue;
 }
@@ -124,66 +102,49 @@ a:active {
   font-family: Barlow;
   font-size: 2em;
   float: center;
-  /* width: 50%; /* == 400px * .5 = 200px */ */
-  height: 50%; /* == 160px * .25 = 40px */
-  margin: 5%; /* == 400px * .05 = 20px */
-  padding: 3%; /* == 400px * .05 = 20px */
+  height: 50%;
+  margin: 5%;
+  padding: 3%;
   background: #212121;
   color: #FFFFEE;
-  
 }
-
 
 .p2 {
   font-family: Ubuntu;
   position: static;
   text-align: center;
   font-size: 1.5em;
-  /* width: 50%; /* == 400px * .5 = 200px */ */
-  height: 50%; /* == 160px * .25 = 40px */
-  margin: 5%; /* == 400px * .05 = 20px */
-  padding: 3%; /* == 400px * .05 = 20px */
+  height: 50%;
+  margin: 5%;
+  padding: 3%;
   background: #212121;
   color: #FFFFEE;
-  
 }
 
-
-
 .column {
-	flex: 50%;
-	padding: 5px;
-	
-
+  flex: 50%;
+  padding: 5px;
 }
 
 footer {
-	padding: 2px;
-	margin: 2px;
-	background: #212121;
-	font-size: 1em;
-	text-align: center;
-	color: white;
-	
-}
-
-html { 
-overflow-y: scroll;
-
+  padding: 2px;
+  margin: 2px;
+  background: #212121;
+  font-size: 1em;
+  text-align: center;
+  color: white;
 }
 
 .fade-in-image { 
-   animation: fadeIn 3s; 
-   display: flex;
+  animation: fadeIn 3s; 
+  display: flex;
   -webkit-animation: fadeIn 3s;
   -moz-animation: fadeIn 3s;
   -o-animation: fadeIn 3s;
   -ms-animation: fadeIn 3s;
-
-  }
+}
 
 .fade-in-text {
-  
   animation: fadeIn 3s;
   -webkit-animation: fadeIn 3s;
   -moz-animation: fadeIn 3s;
@@ -216,3 +177,50 @@ overflow-y: scroll;
   100% { opacity: 1; }
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.introduction {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.project {
+  background-color: #252525;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  color: #FFFFEE;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project p {
+  line-height: 1.6;
+  color: #FFFFEE;
+}
