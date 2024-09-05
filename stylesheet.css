@@ -121,6 +121,17 @@ a:active {
   color: #FFFFEE;
 }
 
+.p3 {
+  font-family: Ubuntu;
+  position: static;
+  text-align: center;
+  font-size: 1.4em;
+  margin: 5%;
+  padding: 3%;
+  background: #212121;
+  color: #FFFFEE;
+}
+
 .column {
   flex: 50%;
   padding: 5px;
