@@ -1,10 +1,11 @@
-@font-face { 
-  font-family: Barlow; 
-  src: url('Barlow-Regular.otf'); 
+@font-face {
+  font-family: Barlow;
+  src: url('Barlow-Regular.otf');
 }
-@font-face { 
-  font-family: Ubuntu; 
-  src: url('Ubuntu-Light.ttf'); 
+
+@font-face {
+  font-family: Ubuntu;
+  src: url('Ubuntu-Light.ttf');
 }
 
 body {
@@ -70,6 +71,7 @@ h3 {
   outline: none;
   font-size: 15px;
 }
+
 /*
 .active, .collapsible:hover {
    background-color: #ccc; 
@@ -83,11 +85,11 @@ h3 {
 }
 
 a:link {
-  color: 767676;
+  color: #767676;
 }
 
 a:visited {
-  color: 767676;
+  color: #767676;
 }
 
 a:hover {
@@ -146,8 +148,8 @@ footer {
   color: white;
 }
 
-.fade-in-image { 
-  animation: fadeIn 3s; 
+.fade-in-image {
+  animation: fadeIn 3s;
   display: flex;
   -webkit-animation: fadeIn 3s;
   -moz-animation: fadeIn 3s;
@@ -164,28 +166,53 @@ footer {
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @-moz-keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @-o-keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @-ms-keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .gallery {
@@ -234,4 +261,189 @@ footer {
 .project p {
   line-height: 1.6;
   color: #FFFFEE;
+}
+
+
+.character-sheet {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 20px;
+  padding: 20px;
+  font-family: Ubuntu, sans-serif;
+  color: #FFFFEE;
+  font-size: larger;
+}
+
+.sidebar {
+  background-color: #212121;
+  color: #FFFFEE;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.character-info {
+  background-color: #2E2E2E;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  gap: 20px; /* Space between the name and the attribute boxes */
+}
+
+.character-info .name {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.character-info .attributes {
+  display: flex;
+  gap: 20px; /* Space between attribute boxes */
+  flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
+}
+
+.character-info .attributes > div {
+  background-color: #212121;
+  padding: 10px;
+  border-radius: 5px;
+  flex: 1;
+  text-align: center;
+  min-width: 100px; /* Minimum width of each box */
+}
+
+.character-info h1 {
+  font-size: 1.5em; /* Adjust the font size as needed */
+  margin-bottom: 10px;
+  color: #FFFFEE;
+}
+
+.character-info p {
+  font-size: 1em;
+  margin: 5px 0;
+  color: #FFFFEE;
+}
+
+.character-image {
+  width: 50%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border-style: solid;
+  border-color: #747474;
+  border-width: 10px;
+}
+
+
+.inventory {
+  background-color: #2E2E2E;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 16px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+
+.inventory h2 {
+  color: #FFFFEE;
+  font-family: Ubuntu;
+}
+
+.inventory ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust the minmax value based on the size of your icons */
+  gap: 20px; /* Space between the boxes */
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.inventory li {
+  background-color: #747474;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.inventory li:hover {
+  transform: translateY(-5px);
+}
+
+.inventory img {
+  width: 70px; /* Adjust the width to fit your design */
+  height: auto; /* Ensures the aspect ratio is maintained */
+  max-width: 100%;
+  border-radius: 5px; /* Optional: Add some rounding to icons */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #FFFFEE;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #767676;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+footer {
+  padding: 20px;
+  background-color: #212121;
+  text-align: center;
+  color: #FFFFEE;
+}
+.stats-skills-container {
+  display: flex;
+  gap: 20px; /* Space between the boxes */
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column; /* Stacks the boxes vertically */
+  gap: 20px; /* Space between the vertical boxes */
+  flex: 1; /* Allows the left column to take up space */
+}
+
+.stats,
+.additional-info {
+  background-color: #252525;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #FFFFEE;
+}
+
+.stats {
+  min-width: 300px; /* Minimum width of the stats box */
+}
+
+.additional-info {
+  min-width: 300px; /* Minimum width of the additional info box */
+}
+
+.skills {
+  background-color: #252525;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #FFFFEE;
+  flex: 2; /* Makes the skills box take up more space */
+}
+
+table {
+  width: 100%;
 }
