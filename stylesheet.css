@@ -23,6 +23,7 @@ h1 {
   margin: 20px 0;
   color: #FFFFEE;
   text-align: center;
+
 }
 
 h2 {
@@ -30,7 +31,7 @@ h2 {
   font-family: Ubuntu;
   text-align: center;
   color: #FFFFEE;
-  
+
 }
 
 h3 {
@@ -152,6 +153,8 @@ footer {
 .fade-in-image {
   animation: fadeIn 3s;
   display: flex;
+  justify-content: center;
+  align-items: center;
   -webkit-animation: fadeIn 3s;
   -moz-animation: fadeIn 3s;
   -o-animation: fadeIn 3s;
@@ -218,7 +221,8 @@ footer {
 
 .gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 35% 35%;
+  justify-content: center;
   gap: 20px;
   padding: 20px;
 }
@@ -309,9 +313,12 @@ footer {
 
 .character-sheet h2 {
   padding: 10px;
-  border: 2px solid #767676; /* Outline color */
-  border-radius: 8px; /* Rounded corners */
-  background-color: #333333; /* Background color to make the text stand out */
+  border: 2px solid #767676;
+  /* Outline color */
+  border-radius: 8px;
+  /* Rounded corners */
+  background-color: #333333;
+  /* Background color to make the text stand out */
 }
 
 .sidebar {
@@ -329,8 +336,10 @@ footer {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  gap: 00px; /* Space between the name and the attribute boxes */
+  flex-direction: column;
+  /* Stack elements vertically */
+  gap: 00px;
+  /* Space between the name and the attribute boxes */
 }
 
 .character-info .name {
@@ -340,39 +349,49 @@ footer {
 
 .name h1 {
   padding: 10px;
-  border: 2px solid #767676; /* Outline color */
-  border-radius: 8px; /* Rounded corners */
-  background-color: #252525; /* Background color to make the text stand out */
+  border: 2px solid #767676;
+  /* Outline color */
+  border-radius: 8px;
+  /* Rounded corners */
+  background-color: #252525;
+  /* Background color to make the text stand out */
 
 }
 
 .character-info .attributes {
   font-size: 1.2em;
   display: flex;
-  gap: 20px; /* Space between attribute boxes */
-  flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
+  gap: 20px;
+  /* Space between attribute boxes */
+  flex-wrap: wrap;
+  /* Allows items to wrap to the next line if necessary */
 }
 
-.character-info .attributes > div {
+.character-info .attributes>div {
   background-color: #212121;
   padding: 8px;
   border-radius: 5px;
   flex: 1;
   text-align: center;
-  min-width: 100px; /* Minimum width of each box */
+  min-width: 100px;
+  /* Minimum width of each box */
 }
 
 .attributes h1 {
   padding: 4px;
-  border: 2px solid #767676; /* Outline color */
-  border-radius: 8px; /* Rounded corners */
-  background-color: #333333; /* Background color to make the text stand out */
+  border: 2px solid #767676;
+  /* Outline color */
+  border-radius: 8px;
+  /* Rounded corners */
+  background-color: #333333;
+  /* Background color to make the text stand out */
 
 }
 
 .character-info h1 {
   font-family: Ubuntu;
-  font-size: 1.5em; /* Adjust the font size as needed */
+  font-size: 1.5em;
+  /* Adjust the font size as needed */
   margin-bottom: 10px;
   margin-top: 4px;
   color: #FFFFEE;
@@ -411,8 +430,10 @@ footer {
 
 .inventory ul {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust the minmax value based on the size of your icons */
-  gap: 20px; /* Space between the boxes */
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  /* Adjust the minmax value based on the size of your icons */
+  gap: 20px;
+  /* Space between the boxes */
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -432,10 +453,13 @@ footer {
 }
 
 .inventory img {
-  width: 70px; /* Adjust the width to fit your design */
-  height: auto; /* Ensures the aspect ratio is maintained */
+  width: 70px;
+  /* Adjust the width to fit your design */
+  height: auto;
+  /* Ensures the aspect ratio is maintained */
   max-width: 100%;
-  border-radius: 5px; /* Optional: Add some rounding to icons */
+  border-radius: 5px;
+  /* Optional: Add some rounding to icons */
 }
 
 table {
@@ -466,17 +490,22 @@ footer {
   text-align: center;
   color: #FFFFEE;
 }
+
 .stats-skills-container {
   display: flex;
-  gap: 20px; /* Space between the boxes */
+  gap: 20px;
+  /* Space between the boxes */
 }
 
 .left-column {
   font-family: Barlow;
   display: flex;
-  flex-direction: column; /* Stacks the boxes vertically */
-  gap: 20px; /* Space between the vertical boxes */
-  flex: 1; /* Allows the left column to take up space */
+  flex-direction: column;
+  /* Stacks the boxes vertically */
+  gap: 20px;
+  /* Space between the vertical boxes */
+  flex: 1;
+  /* Allows the left column to take up space */
 }
 
 .stats,
@@ -489,7 +518,8 @@ footer {
 }
 
 .stats {
-  min-width: 300px; /* Minimum width of the stats box */
+  min-width: 300px;
+  /* Minimum width of the stats box */
 }
 
 .stats h2 {
@@ -499,7 +529,8 @@ footer {
 }
 
 .additional-info {
-  min-width: 300px; /* Minimum width of the additional info box */
+  min-width: 300px;
+  /* Minimum width of the additional info box */
 }
 
 .additional-info h2 {
@@ -514,7 +545,8 @@ footer {
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   color: #FFFFEE;
-  flex: 2; /* Makes the skills box take up more space */
+  flex: 2;
+  /* Makes the skills box take up more space */
 }
 
 table {
