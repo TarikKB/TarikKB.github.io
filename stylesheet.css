@@ -19,15 +19,10 @@ body {
 
 h1 {
   font-family: Ubuntu;
-  display: block;
   font-size: 2em;
-  margin-top: 1em;
-  margin-bottom: 0.67em;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 20px 0;
   color: #FFFFEE;
   text-align: center;
-  
 }
 
 h2 {
@@ -45,6 +40,11 @@ h3 {
   color: #FFFFEE;
 }
 
+header {
+  position: relative;
+  text-align: center;
+}
+
 .button {
   font-size: 1.5em;
   border: none;
@@ -56,11 +56,10 @@ h3 {
 }
 
 .aboutbutton {
-  right: 5%;
-  top: 6%;
-  font-size: 0.8em;
   position: absolute;
-  color: #FFFFEE;
+  top: 20px;
+  right: 20px;
+  font-size: 0.9em;
 }
 
 .collapsible {
@@ -234,11 +233,24 @@ footer {
   padding: 40px 20px;
 }
 
-.projects {
+/* .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
   padding: 20px;
+} */
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (min-width: 700px) {
+  .projects {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
 }
 
 .project {
@@ -248,8 +260,26 @@ footer {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   color: #FFFFEE;
+  font-size: 1rem;
 }
 
+.project b {
+  display: block;
+  font-family: Ubuntu;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+@media (max-width: 999px) {
+  .project {
+    font-size: 1.1rem;
+    padding: 24px;
+  }
+
+  .project b {
+    font-size: 2.7rem;
+  }
+}
 .project:hover {
   transform: translateY(-5px);
 }
@@ -257,13 +287,14 @@ footer {
 .project img {
   width: 100%;
   border-radius: 8px;
-  margin-bottom: 15px;
+  margin-top: 20px;
 }
 
 .project p {
   line-height: 1.6;
   color: #FFFFEE;
 }
+
 
 
 .character-sheet {
@@ -488,4 +519,88 @@ footer {
 
 table {
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  .button {
+    font-size: 1.1em;
+  }
+
+  .character-sheet {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .sidebar,
+  .character-info,
+  .inventory,
+  .skills,
+  .stats,
+  .additional-info {
+    padding: 16px;
+  }
+
+  .character-image {
+    width: 70%;
+    max-width: 220px;
+    border-width: 6px;
+  }
+
+  .character-info .attributes {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .character-info .attributes > div {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .stats-skills-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .stats,
+  .additional-info,
+  .skills {
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .inventory ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .inventory li {
+    padding: 14px;
+  }
+
+  table,
+  th,
+  td {
+    font-size: 0.95rem;
+  }
 }
