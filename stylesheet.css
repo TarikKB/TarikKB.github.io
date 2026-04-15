@@ -553,6 +553,7 @@ table {
   width: 100%;
 }
 
+<<<<<<< HEAD
 @media (max-width: 768px) {
   header {
     padding: 16px;
@@ -635,4 +636,36 @@ table {
   td {
     font-size: 0.95rem;
   }
+=======
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 0;
+}
+
+.carousel img {
+  width: 70%;
+  max-width: 1000px;
+  border-radius: 8px;
+}
+
+.carousel-btn {
+  background: none;
+  border: none;
+  color: #FFFFEE;
+  font-size: 4rem;
+  cursor: pointer;
+  padding: 0 10px;
+  user-select: none;
+}
+
+.carousel-btn:hover {
+  color: hotpink;
+}
+
+.carousel img {
+  transition: opacity 0.2s ease;
+>>>>>>> 0467390 (added gdc award sticker, added carousel)
 }

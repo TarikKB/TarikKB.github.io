@@ -26,20 +26,15 @@
         </h1>
     </header>
 
-    <section class="gallery">
-        <div class="gallery-item fade-in-image">
-            <img src="LanternLightAction.png" alt="actionshot1">
-        </div>
-        <div class="gallery-item fade-in-image">
-            <img src="BloodVesselAction.png" alt="actionshot2">
-        </div>
-        <div class="gallery-item fade-in-image">
-            <img src="Tome.jpg" alt="actionshot2">
-        </div>
-        <div class="gallery-item fade-in-image">
-            <img src="DragonSculpt.jpg" alt="actionshot2">
-        </div>
+
+    <section class="carousel fade-in-image">
+        <button class="carousel-btn left" aria-label="Previous image">‹</button>
+
+        <img id="carousel-image" src="LanternLightAction.png" alt="Project showcase">
+
+        <button class="carousel-btn right" aria-label="Next image">›</button>
     </section>
+
 
     <section class="introduction fade-in-text">
         <h2>I like to make games :)</h2>
@@ -49,7 +44,7 @@
         <div class="project">
             <b>LANTERN LIGHT</b>
             <a href="https://store.steampowered.com/app/2192100/Lantern_Light_DEMO/" target="_blank">
-                <img src="LanternLightThumbnail.png" alt="LanternLightThumbnail">
+                <img src="LanternLightGDCThumbnail2.png" alt="LanternLightThumbnail">
             </a>
         </div>
         <div class="project">
@@ -96,12 +91,60 @@
 
     </section>
 
+    <script>
+        const images = [
+            "LanternLightAction.png",
+            "BloodVesselAction.png",
+            "Tome.jpg",
+            "DragonSculpt.jpg"
+        ];
+
+        let index = 0;
+        const img = document.getElementById("carousel-image");
+
+        function showImage(i) {
+            img.style.opacity = 0;
+
+            setTimeout(() => {
+                img.src = images[i];
+                img.style.opacity = 1;
+            }, 150);
+        }
+
+
+        function startAutoCycle() {
+            intervalId = setInterval(() => {
+                index = (index + 1) % images.length;
+                showImage(index);
+            }, 2000);
+        }
+
+        function resetAutoCycle() {
+            clearInterval(intervalId);
+            startAutoCycle();
+        }
+
+        document.querySelector(".carousel-btn.left").onclick = () => {
+            index = (index - 1 + images.length) % images.length;
+            showImage(index);
+            resetAutoCycle();
+        };
+
+        document.querySelector(".carousel-btn.right").onclick = () => {
+            index = (index + 1) % images.length;
+            showImage(index);
+            resetAutoCycle();
+        };
+        startAutoCycle();
+    </script>
+
     <footer>
         <br>
         Contact me at:
         <a href="mailto:tarikkbaghdadi@gmail.com">tarikkbaghdadi@gmail.com</a>
         <br><br>
     </footer>
+
 </body>
 
 </html>
